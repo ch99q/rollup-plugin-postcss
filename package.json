@@ -1,0 +1,36 @@
+{
+  "name": "@ch99q/rollup-plugin-postcss",
+  "version": "1.0.0",
+  "description": "Seamless integration between Rollup and PostCSS",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "unbuild",
+    "test": "unbuild && cd playground && unbuild -c ./build.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.34",
+    "unbuild": "^0.7.4"
+  },
+  "dependencies": {
+    "postcss": "^8.4.13",
+    "postcss-modules": "^4.3.1",
+    "rollup": "^2.73.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.13",
+    "postcss-modules": "^4.3.1",
+    "rollup": "^2.73.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
